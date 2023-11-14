@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .outbox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 700px;
+      height: 775px;
+      border: 1px solid #333;
+    }
+
+    .outbox2 {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 750px;
+      height: 825px;
+      /* border: 1px solid #da3939; */
+    }
+
+    .row {
+      box-sizing: border-box;
+      display: flex;
+      width: 600px;
+      height: 75px;
+      /* border: 1px solid #333; */
+    }
+
+    .row2 {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-around;
+      width: 675px;
+      height: 88px;
+      /* border: 1px solid red; */
+    }
+
+    .flexend {
+      align-items: flex-end;
+    }
+
+
+
+    .marginbottom {
+      margin-bottom: -10px;
+    }
+
+    .col2 {
+      position: relative;
+      width: 62px;
+      height: 62px;
+      background: #fff;
+      border: 1px solid #000000;
+      border-radius: 50%;
+    }
+
+    .none {
+      position: relative;
+      width: 62px;
+      height: 62px;
+      /* border: 1px solid #3953c7; */
+      border-radius: 50%;
+    }
+
+    .p {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+      line-height: 75px;
+      font-family: '標楷體';
+      font-size: 52px;
+    }
+
+    .row:nth-child(4),
+    .row:nth-child(9) {
+      border-bottom: 1px solid #333;
+    }
+
+    .row:nth-child(5) {
+      border-left: 1px solid #333;
+      border-right: 1px solid #333;
+    }
+
+    .col {
+      position: relative;
+      box-sizing: border-box;
+      width: 75px;
+      height: 75px;
+      border: 1px solid #333;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    .col:nth-child(8) {
+      border-right: #333 1px solid;
+    }
+
+    .line1::before {
+      content: " ";
+      position: absolute;
+      width: 106px;
+      height: 1px;
+      background: #000;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .line2::before {
+      content: " ";
+      position: absolute;
+      width: 106px;
+      height: 1px;
+      background: #000;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .text {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      white-space: nowrap;
+      line-height: 75px;
+      font-family: '標楷體';
+      font-size: 40px;
+    }
+
+    .red {
+      color: red;
+      font-family: '標楷體';
+      font-size: 36px;
+      text-align: center;
+      line-height: 60px;
+    }
+
+    .black {
+      color: #000;
+      font-family: '標楷體';
+      font-size: 36px;
+      text-align: center;
+      line-height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="text">棋盤裡，車無輪，馬無疆，叫聲將軍提防提防</div>
+  <div class="outbox">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col line1"></div>
+      <div class="col line2"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col line2"></div>
+      <div class="col line1"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="p">楚河</div>
+      <div class="p">漢界</div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col line1"></div>
+      <div class="col line2"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col line2"></div>
+      <div class="col line1"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+  </div>
+  <div class="outbox2">
+    <div class="row2 flexend">
+      <div class="col2 black">車</div>
+      <div class="col2 black">馬</div>
+      <div class="col2 black">象</div>
+      <div class="col2 black">士</div>
+      <div class="col2 black">將</div>
+      <div class="col2 black">士</div>
+      <div class="col2 black">象</div>
+      <div class="col2 black">馬</div>
+      <div class="col2 black">車</div>
+    </div>
+    <div class="row2"></div>
+    <div class="row2">
+      <div class="none"></div>
+      <div class="col2 black">包</div>
+      <div class="none"></div>
+      <div class="none"></div>
+      <div class="none"></div>
+      <div class="none"></div>
+      <div class="none"></div>
+      <div class="col2 black">包</div>
+      <div class="none"></div>
+    </div>
+    <div class="row2" style="justify-content: space-between; padding: 0 6px;">
+      <div class="col2 black" style="margin-top: -10px;">卒</div>
+      <div class="col2 black" style="margin-top: -10px;">卒</div>
+      <div class="col2 black" style="margin-top: -10px;">卒</div>
+      <div class="col2 black" style="margin-top: -10px;">卒</div>
+      <div class="col2 black" style="margin-top: -10px;">卒</div>
+    </div>
+    <div class="row2"></div>
+    <div class="row2 flexend" style="justify-content: space-between; padding: 0 6px;">
+      <div class="col2 marginbottom red">兵</div>
+      <div class="col2 marginbottom red">兵</div>
+      <div class="col2 marginbottom red">兵</div>
+      <div class="col2 marginbottom red">兵</div>
+      <div class="col2 marginbottom red">兵</div>
+    </div>
+    <div class="row2" style="align-items: center;">
+      <div class="none" style="margin-bottom: -16px;"></div>
+      <div class="col2 red" style="margin-bottom: -16px;">炮</div>
+      <div class="none" style="margin-bottom: -16px;"></div>
+      <div class="none" style="margin-bottom: -16px;"></div>
+      <div class="none" style="margin-bottom: -16px;"></div>
+      <div class="none" style="margin-bottom: -16px;"></div>
+      <div class="none" style="margin-bottom: -16px;"></div>
+      <div class="col2 red" style="margin-bottom: -16px;">炮</div>
+      <div class="none" style="margin-bottom: -16px;"></div>
+    </div>
+    <div class="row2"></div>
+    <div class="row2">
+      <div class="col2 red" style="margin-top: -5px;">俥</div>
+      <div class="col2 red" style="margin-top: -5px;">傌</div>
+      <div class="col2 red" style="margin-top: -5px;">相</div>
+      <div class="col2 red" style="margin-top: -5px;">仕</div>
+      <div class="col2 red" style="margin-top: -5px;">帥</div>
+      <div class="col2 red" style="margin-top: -5px;">仕</div>
+      <div class="col2 red" style="margin-top: -5px;">相</div>
+      <div class="col2 red" style="margin-top: -5px;">傌</div>
+      <div class="col2 red" style="margin-top: -5px;">俥</div>
+    </div>
+  </div>
+  <div class="text">圖畫裡，龍不吟，虎不嘯，小小書僮可笑可笑</div>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bg-full.jpg');
+    }
+
+    .bigbox {
+      display: flex;
+      width: 1300px;
+      height: 700px;
+      border: 1px solid #5c5a5a;
+    }
+
+    .midbox {
+      width: 650px;
+      height: 700px;
+      /* border: 1px solid #fff; */
+    }
+
+    .box1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('main.jpg');
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+    }
+
+    .box1 img {
+      width: 35%;
+    }
+
+    .content {
+      display: flex;
+      width: 650px;
+      height: 350px;
+    }
+
+    .content img {
+      width: 45%;
+    }
+
+    .t1 {
+
+      background: #c5c1c1;
+      background-image: url('cloud.png');
+      background-size: 305px;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+
+    .t2 {
+      display: flex;
+      flex-direction: row-reverse;
+      background: #000;
+      background-image: url('tifa.png');
+      background-size: 270px;
+      background-repeat: no-repeat;
+      background-position: 32px bottom;
+      color: #fff;
+    }
+
+    .word1 {
+      display: flex;
+      width: 400px;
+      margin-left: 2rem;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .word2 {
+      display: flex;
+      justify-content: center;
+      width: 400px;
+      margin-left: 2rem;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="bigbox">
+      <div class="midbox box1">
+        <img src="./ps4-ff7.png">
+        <h1>Lorem ipsum dolor sit amet conse</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aliquid quis adipisci <br>iusto nemo dolore possimus
+          voluptatem fugiat molestiae consequuntur voluptate?<br>olestiae consequuntur voluptate?</p>
+      </div>
+      <div class="midbox box2">
+        <div class="content t1">
+          <div class="word1">
+            <h1>Cloud</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aliquid quis adipisci iusto nemo dolore
+              possimus
+              voluptatem fugiat molestiae consequuntur voluptate?<br>olestiae consequuntur voluptate?</p>
+          </div>
+        </div>
+        <div class="content t2">
+          <div class="word2">
+            <h1>Tifa</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Aliquid quis adipisci iusto nemo dolore
+              possimus
+              voluptatem fugiat molestiae consequuntur voluptate?<br>olestiae consequuntur voluptate?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
